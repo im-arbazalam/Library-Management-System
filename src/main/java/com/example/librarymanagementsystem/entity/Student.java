@@ -2,6 +2,7 @@ package com.example.librarymanagementsystem.entity;
 
 import com.example.librarymanagementsystem.Enums.Department;
 import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,7 +22,7 @@ public class Student {
     private String name;
     private int age;
 
-    @Enumerated(EnumType.STRING)
+   @Enumerated(EnumType.STRING)
     private Department department;
     private String mobNo;
 

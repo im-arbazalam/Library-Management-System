@@ -22,6 +22,7 @@ public class Author {
     private int id;
     private String name;
     private int age;
+    @Column(unique = true)
     private String email;
 
     @OneToMany(mappedBy = "author",cascade=CascadeType.ALL)  //these step build multi directional relationship from parent to child
